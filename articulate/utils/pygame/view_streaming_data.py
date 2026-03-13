@@ -69,7 +69,7 @@ class StreamingDataViewer:
                                    ('Frequency' if self.fft else 'Time',
                                     self.window_length, self.y_range[0], self.y_range[1]))
         if self.names is not None:
-            font = pygame.font.SysFont('None', self.font_size)
+            font = pygame.font.Font('None', self.font_size)
             self.names = [font.render(chr(9644) + ' ' + self.names[i], True, self.colors[i % 10]) for i in range(len(self.names))]
 
     def disconnect(self):
